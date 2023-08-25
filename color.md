@@ -44,7 +44,7 @@ function draw() {
 
 # Syntax
 
-> `Quadrille.NUMBER({graphics, cell, [cellLength]})`
+> `Quadrille.COLOR({graphics, cell, [cellLength]})`
 
 # Parameters
 
