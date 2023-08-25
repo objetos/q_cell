@@ -1,9 +1,9 @@
 ---
 bookCollapseSection: true
-weight: 1
+weight: 2
 draft: false
 ---
 
-# Constants
+# Cell drawing algorithms
 
-All library constants are defined as `Quadrille` static properties.
+All library drawing algorithms are static.
