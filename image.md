@@ -7,7 +7,7 @@ draft: false
 
 Static method for drawing cells that are [p5.Image](https://p5js.org/reference/#/p5.Image) or [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) instances.
 
-Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample]({{< ref "sample" >}}).
+Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objetos.github.io/p5.quadrille.js/docs/visual_computing/sample/).
 
 # Example
 
