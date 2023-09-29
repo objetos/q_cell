@@ -5,7 +5,7 @@ draft: false
 
 # `IMAGE`
 
-Static method for drawing cells that are [p5.Image](https://p5js.org/reference/#/p5.Image) or [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) instances.
+Static method for drawing cells that are filled with [p5.Image](https://p5js.org/reference/#/p5.Image) or [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) instances.
 
 Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objetos.github.io/p5.quadrille.js/docs/visual_computing/sample/).
 
@@ -25,7 +25,7 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.IMAGE( { graphics: this, cell: al, cellLength: width } );
+  Quadrille.IMAGE({ graphics: this, value: al, cellLength: width });
 }
 {{< /p5-global-iframe >}}
 
@@ -43,19 +43,19 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.IMAGE( { graphics: this, cell: al, cellLength: width } );
+  Quadrille.IMAGE({ graphics: this, value: al, cellLength: width });
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.IMAGE({graphics, cell, [cellLength]})`
+> `Quadrille.IMAGE({graphics, value, [cellLength]})`
 
 # Parameters
 
 | parameter  | description                                                                                 |
 |------------|---------------------------------------------------------------------------------------------|
 | graphics   | [p5.Graphics](https://p5js.org/reference/#/p5.Graphics): renderer target                    |
-| cell       | [p5.Color](https://p5js.org/reference/#/p5.Color): cell contents                            |
+| value      | [p5.Color](https://p5js.org/reference/#/p5.Color): cell contents                            |
 | cellLength | Number: edge length in pixels default is [Quadrille.CELL_LENGTH]({{< ref "cell_length" >}}) |
