@@ -11,7 +11,7 @@ Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objet
 
 # Example
 
-{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="205" height="230" >}}
+{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="205" height="230" >}}
 `use strict`;
 let string;
 
@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('tomato');
   Quadrille.STRING({ graphics: this, value: string.value(), cellLength: width, textZoom: 0.65 });
 }
 {{< /p5-global-iframe >}}
@@ -36,7 +36,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('tomato');
   Quadrille.STRING({ graphics: this, value: string.value(),
                      cellLength: width, textZoom: 0.65 });
 }
