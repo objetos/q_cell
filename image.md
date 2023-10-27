@@ -3,7 +3,7 @@ weight: 4
 draft: false
 ---
 
-# `IMAGE`
+# `image`
 
 Static method for drawing cells that are filled with [p5.Image](https://p5js.org/reference/#/p5.Image) or [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) instances.
 
@@ -11,7 +11,7 @@ Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objet
 
 # Example
 
-{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="190" height="190" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="190" height="190" >}}
 `use strict`;
 let al;
 
@@ -25,7 +25,7 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.IMAGE({ graphics: this, value: al, cellLength: width });
+  Quadrille.image({ graphics: this, value: al, cellLength: width });
 }
 {{< /p5-global-iframe >}}
 
@@ -43,14 +43,14 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.IMAGE({ graphics: this, value: al, cellLength: width });
+  Quadrille.image({ graphics: this, value: al, cellLength: width });
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.IMAGE({graphics, value, [cellLength]})`
+> `Quadrille.image({graphics, value, [cellLength]})`
 
 # Parameters
 

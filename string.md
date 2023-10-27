@@ -3,7 +3,7 @@ weight: 5
 draft: false
 ---
 
-# `STRING`
+# `string`
 
 Static method for drawing cells that are filled with colors.
 
@@ -11,7 +11,7 @@ Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objet
 
 # Example
 
-{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="205" height="230" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="205" height="230" >}}
 `use strict`;
 let string;
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background('tomato');
-  Quadrille.STRING({ graphics: this, value: string.value(), cellLength: width, textZoom: 0.65 });
+  Quadrille.string({ graphics: this, value: string.value(), cellLength: width, textZoom: 0.65 });
 }
 {{< /p5-global-iframe >}}
 
@@ -37,7 +37,7 @@ function setup() {
 
 function draw() {
   background('tomato');
-  Quadrille.STRING({ graphics: this, value: string.value(),
+  Quadrille.string({ graphics: this, value: string.value(),
                      cellLength: width, textZoom: 0.65 });
 }
 ```
@@ -45,7 +45,7 @@ function draw() {
 
 # Syntax
 
-> `Quadrille.STRING({graphics, value, [cellLength], [textColor], [textZoom]})`
+> `Quadrille.string({graphics, value, [cellLength], [textColor], [textZoom]})`
 
 # Parameters
 

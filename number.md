@@ -3,15 +3,15 @@ weight: 2
 draft: false
 ---
 
-# `NUMBER`
+# `number`
 
-Static method for drawing cells that are filled with numbers. [Implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L1086) in terms of [Quadrille.COLOR]({{< ref "color" >}}) as: `Quadrille.COLOR({ graphics: graphics, cell: graphics.color(graphics.constrain(cell, 0, 255)), cellLength: cellLength })`.
+Static method for drawing cells that are filled with numbers. [Implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L1086) in terms of [Quadrille.color]({{< ref "color" >}}) as: `Quadrille.color({ graphics: graphics, cell: graphics.color(graphics.constrain(cell, 0, 255)), cellLength: cellLength })`.
 
 Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objetos.github.io/p5.quadrille.js/docs/visual_computing/sample/).
 
 # Example
 
-{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="190" height="220" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="190" height="220" >}}
 `use strict`;
 let number;
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.NUMBER( { graphics: this, value: number.value(), cellLength: width } );
+  Quadrille.number( { graphics: this, value: number.value(), cellLength: width } );
 }
 {{< /p5-global-iframe >}}
 
@@ -37,14 +37,14 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.NUMBER({graphics: this, value: number.value(), cellLength: width});
+  Quadrille.number({graphics: this, value: number.value(), cellLength: width});
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.NUMBER({graphics, value, [cellLength]})`
+> `Quadrille.number({graphics, value, [cellLength]})`
 
 # Parameters
 

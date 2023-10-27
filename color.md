@@ -3,7 +3,7 @@ weight: 3
 draft: false
 ---
 
-# `COLOR`
+# `color`
 
 Static method for drawing cells that are filled with colors.
 
@@ -11,7 +11,7 @@ Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objet
 
 # Example
 
-{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="190" height="225" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="190" height="225" >}}
 `use strict`;
 let color;
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.COLOR({graphics: this, value: color.value(), cellLength: width});
+  Quadrille.color({graphics: this, value: color.value(), cellLength: width});
 }
 {{< /p5-global-iframe >}}
 
@@ -37,14 +37,14 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.COLOR({graphics: this, value: color.value(), cellLength: width});
+  Quadrille.color({graphics: this, value: color.value(), cellLength: width});
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.COLOR({graphics, value, [cellLength]})`
+> `Quadrille.color({graphics, value, [cellLength]})`
 
 # Parameters
 

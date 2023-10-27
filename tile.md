@@ -3,7 +3,7 @@ weight: 1
 draft: false
 ---
 
-# `TILE`
+# `tile`
 
 Static method for drawing cell tiles.
 
@@ -11,7 +11,7 @@ Used by [drawQuadrille]({{< ref "draw_quadrille" >}}).
 
 # Example
 
-{{< p5-global-iframe lib1="/p5.quadrille.js/docs/libs/p5.quadrille.js" width="130" height="130" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="130" height="130" >}}
 `use strict`;
 function setup() {
   createCanvas(105, 105);
@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
   background('yellow');
-  Quadrille.TILE( { graphics: this, outlineWeight: 9 } );
+  Quadrille.tile( { graphics: this, outlineWeight: 9 } );
 }
 {{< /p5-global-iframe >}}
 
@@ -31,14 +31,14 @@ function setup() {
 
 function draw() {
   background('yellow');
-  Quadrille.TILE( { graphics: this, outlineWeight: 9 } );
+  Quadrille.tile( { graphics: this, outlineWeight: 9 } );
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.TILE({graphics, [col], [row], [width], [height], [cellLength], [outline], [outlineWeight]})`
+> `Quadrille.tile({graphics, [col], [row], [width], [height], [cellLength], [outline], [outlineWeight]})`
 
 # Parameters
 
