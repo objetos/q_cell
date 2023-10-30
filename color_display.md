@@ -1,56 +1,50 @@
 ---
-weight: 4
+weight: 3
 draft: false
 ---
 
-# `image`
+# `colorDisplay`
 
-Static method for drawing cells that are filled with [p5.Image](https://p5js.org/reference/#/p5.Image) or [p5.Graphics](https://p5js.org/reference/#/p5.Graphics) instances.
+Static method for drawing cells that are filled with colors.
 
 Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objetos.github.io/p5.quadrille.js/docs/visual_computing/sample/).
 
 # Example
 
-{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="190" height="190" >}}
+{{< p5-global-iframe lib1="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.js" width="190" height="225" >}}
 `use strict`;
-let al;
-
-function preload() {
-  al = loadImage('../abraham_lincoln.jpg');
-}
+let color;
 
 function setup() {
   createCanvas(165, 165);
+  color = createColorPicker('magenta');
 }
 
 function draw() {
   background('blue');
-  Quadrille.image({ graphics: this, value: al, cellLength: width });
+  Quadrille.colorDisplay({graphics: this, value: color.value(), cellLength: width});
 }
 {{< /p5-global-iframe >}}
 
 {{< details title="code" open=false >}}
 ```js
-let al;
-
-function preload() {
-  al = loadImage('abraham_lincoln.jpg');
-}
+let color;
 
 function setup() {
   createCanvas(165, 165);
+  color = createColorPicker('magenta');
 }
 
 function draw() {
   background('blue');
-  Quadrille.image({ graphics: this, value: al, cellLength: width });
+  Quadrille.colorDisplay({graphics: this, value: color.value(), cellLength: width});
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.image({graphics, value, [cellLength]})`
+> `Quadrille.colorDisplay({graphics, value, [cellLength]})`
 
 # Parameters
 

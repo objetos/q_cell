@@ -3,7 +3,7 @@ weight: 1
 draft: false
 ---
 
-# `tile`
+# `tileDisplay`
 
 Static method for drawing cell tiles.
 
@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
   background('yellow');
-  Quadrille.tile( { graphics: this, outlineWeight: 9 } );
+  Quadrille.tileDisplay( { graphics: this, outlineWeight: 9 } );
 }
 {{< /p5-global-iframe >}}
 
@@ -31,14 +31,14 @@ function setup() {
 
 function draw() {
   background('yellow');
-  Quadrille.tile( { graphics: this, outlineWeight: 9 } );
+  Quadrille.tileDisplay( { graphics: this, outlineWeight: 9 } );
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.tile({graphics, [col], [row], [width], [height], [cellLength], [outline], [outlineWeight]})`
+> `Quadrille.tileDisplay({graphics, [col], [row], [width], [height], [cellLength], [outline], [outlineWeight]})`
 
 # Parameters
 

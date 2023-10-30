@@ -3,9 +3,9 @@ weight: 2
 draft: false
 ---
 
-# `number`
+# `numberDisplay`
 
-Static method for drawing cells that are filled with numbers. [Implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L1086) in terms of [Quadrille.color]({{< ref "color" >}}) as: `Quadrille.color({ graphics: graphics, cell: graphics.color(graphics.constrain(cell, 0, 255)), cellLength: cellLength })`.
+Static method for drawing cells that are filled with numbers. [Implemented](https://github.com/objetos/p5.quadrille.js/blob/main/p5.quadrille.js#L1086) in terms of [Quadrille.colorDisplay]({{< ref "color_display" >}}) as: `Quadrille.colorDisplay({ graphics: graphics, cell: graphics.color(graphics.constrain(cell, 0, 255)), cellLength: cellLength })`.
 
 Used by [drawQuadrille]({{< ref "draw_quadrille" >}}) and [sample](https://objetos.github.io/p5.quadrille.js/docs/visual_computing/sample/).
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.number( { graphics: this, value: number.value(), cellLength: width } );
+  Quadrille.numberDisplay( { graphics: this, value: number.value(), cellLength: width } );
 }
 {{< /p5-global-iframe >}}
 
@@ -37,14 +37,14 @@ function setup() {
 
 function draw() {
   background('blue');
-  Quadrille.number({graphics: this, value: number.value(), cellLength: width});
+  Quadrille.numberDisplay({graphics: this, value: number.value(), cellLength: width});
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.number({graphics, value, [cellLength]})`
+> `Quadrille.numberDisplay({graphics, value, [cellLength]})`
 
 # Parameters
 

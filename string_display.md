@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
   background('tomato');
-  Quadrille.string({ graphics: this, value: string.value(), cellLength: width, textZoom: 0.65 });
+  Quadrille.stringDisplay({ graphics: this, value: string.value(), cellLength: width, textZoom: 0.65 });
 }
 {{< /p5-global-iframe >}}
 
@@ -37,15 +37,15 @@ function setup() {
 
 function draw() {
   background('tomato');
-  Quadrille.string({ graphics: this, value: string.value(),
-                     cellLength: width, textZoom: 0.65 });
+  Quadrille.stringDisplay({ graphics: this, value: string.value(),
+                            cellLength: width, textZoom: 0.65 });
 }
 ```
 {{< /details >}}
 
 # Syntax
 
-> `Quadrille.string({graphics, value, [cellLength], [textColor], [textZoom]})`
+> `Quadrille.stringDisplay({graphics, value, [cellLength], [textColor], [textZoom]})`
 
 # Parameters
 
