@@ -52,4 +52,4 @@ function draw() {
 |------------|---------------------------------------------------------------------------------------------|
 | graphics   | [p5.Graphics](https://p5js.org/reference/#/p5.Graphics): renderer target                    |
 | value      | [p5.Color](https://p5js.org/reference/#/p5.Color): cell contents                            |
-| cellLength | Number: edge length in pixels default is [Quadrille.CELL_LENGTH]({{< ref "cell_length" >}}) |
+| cellLength | Number: edge length in pixels default is [Quadrille.cellLength]({{< ref "cell_length" >}}) |
